@@ -46,13 +46,19 @@ def init_known_faces():
 
             # Load an image
             image = face_recognition.load_image_file(f'{KNOWN_FACES_DIR}/{name}/{filename}')
-
+            
+            face_encodings = face_recognition.face_encodings(image)
+            
+            if face_encodings:  # Vérifiez si les encodages faciaux ne sont pas vides
+                encoding = face_encodings[0]
+                known_faces.append(encoding)
+                known_names.append(name)
             # Get the 128-dimensional face encoding
-            encoding = face_recognition.face_encodings(image)[0]
+            # encoding = face_recognition.face_encodings(image)[0]
 
             # Append encodings and names to their respective lists
-            known_faces.append(encoding)
-            known_names.append(name)
+            # known_faces.append(encoding)
+            # known_names.append(name)
 
     return (known_faces, known_names)
 
@@ -71,7 +77,7 @@ def init_known_faces():
 #   - known_faces, known_names --> lists that contains the face encodings of known faces, and the names.
 #     These parameters are init_known_faces function object
 #     It can be defined as: known_faces, known_names  = init_known_faces()
-# Void function no return
+# return the frame
 
 def face_reco_process(video, face_locations, face_encodings, known_faces, known_names):
     # Capture a frame from the video
@@ -125,5 +131,3 @@ def face_reco_process(video, face_locations, face_encodings, known_faces, known_
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)  # Display the face's name
 
     return(frame)
-    # # Display the resulting image with detected faces
-    # cv2.imshow('Video', frame)
