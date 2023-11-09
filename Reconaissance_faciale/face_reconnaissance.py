@@ -124,5 +124,6 @@ def face_reco_process(video, face_locations, face_encodings, known_faces, known_
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)  # Display the face's name
 
-    # Display the resulting image with detected faces
-    cv2.imshow('Video', frame)
+    return(frame)
+    # # Display the resulting image with detected faces
+    # cv2.imshow('Video', frame)

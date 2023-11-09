@@ -2,7 +2,6 @@ from Reconaissance_faciale.face_reconnaissance import init_known_faces, face_rec
 import cv2
 
 
-
 known_faces, known_names  = init_known_faces()
 
 # Initialize some variables
@@ -24,10 +23,5 @@ while True:
 video_capture.release()
 cv2.destroyAllWindows()
     
-
-
-
-    
-
 
 
