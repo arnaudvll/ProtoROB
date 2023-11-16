@@ -1,0 +1,38 @@
+[0.664s] Invoking command in '/home/adrien/py_proto_ros2/src/dinamyxelAx12': PYTHONPATH=/home/adrien/py_proto_ros2/build/dinamyxelAx12/prefix_override:/home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dinamyxelAx12 build --build-base /home/adrien/py_proto_ros2/build/dinamyxelAx12/build install --record /home/adrien/py_proto_ros2/build/dinamyxelAx12/install.log --single-version-externally-managed
+[0.839s] running egg_info
+[0.852s] writing ../../build/dinamyxelAx12/dinamyxelAx12.egg-info/PKG-INFO
+[0.853s] writing dependency_links to ../../build/dinamyxelAx12/dinamyxelAx12.egg-info/dependency_links.txt
+[0.853s] writing entry points to ../../build/dinamyxelAx12/dinamyxelAx12.egg-info/entry_points.txt
+[0.853s] writing requirements to ../../build/dinamyxelAx12/dinamyxelAx12.egg-info/requires.txt
+[0.853s] writing top-level names to ../../build/dinamyxelAx12/dinamyxelAx12.egg-info/top_level.txt
+[0.881s] reading manifest file '../../build/dinamyxelAx12/dinamyxelAx12.egg-info/SOURCES.txt'
+[0.881s] writing manifest file '../../build/dinamyxelAx12/dinamyxelAx12.egg-info/SOURCES.txt'
+[0.882s] running build
+[0.882s] running build_py
+[0.882s] copying dinamyxelAx12/cmd_manuelle.py -> /home/adrien/py_proto_ros2/build/dinamyxelAx12/build/lib/dinamyxelAx12
+[0.882s] running install
+[0.882s] /home/adrien/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[0.883s] !!
+[0.883s] 
+[0.883s]         ********************************************************************************
+[0.883s]         Please avoid running ``setup.py`` directly.
+[0.883s]         Instead, use pypa/build, pypa/installer or other
+[0.883s]         standards-based tools.
+[0.883s] 
+[0.883s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[0.884s]         ********************************************************************************
+[0.884s] 
+[0.884s] !!
+[0.884s]   self.initialize_options()
+[0.887s] running install_lib
+[0.901s] copying /home/adrien/py_proto_ros2/build/dinamyxelAx12/build/lib/dinamyxelAx12/cmd_manuelle.py -> /home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages/dinamyxelAx12
+[0.902s] byte-compiling /home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages/dinamyxelAx12/cmd_manuelle.py to cmd_manuelle.cpython-310.pyc
+[0.903s] running install_data
+[0.916s] running install_egg_info
+[0.930s] removing '/home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages/dinamyxelAx12-0.0.0-py3.10.egg-info' (and everything under it)
+[0.931s] Copying ../../build/dinamyxelAx12/dinamyxelAx12.egg-info to /home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages/dinamyxelAx12-0.0.0-py3.10.egg-info
+[0.931s] running install_scripts
+[1.055s] Installing cmd_bluetooth script to /home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/dinamyxelAx12
+[1.056s] Installing cmd_manuelle script to /home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/dinamyxelAx12
+[1.056s] writing list of installed files to '/home/adrien/py_proto_ros2/build/dinamyxelAx12/install.log'
+[1.089s] Invoked command in '/home/adrien/py_proto_ros2/src/dinamyxelAx12' returned '0': PYTHONPATH=/home/adrien/py_proto_ros2/build/dinamyxelAx12/prefix_override:/home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dinamyxelAx12 build --build-base /home/adrien/py_proto_ros2/build/dinamyxelAx12/build install --record /home/adrien/py_proto_ros2/build/dinamyxelAx12/install.log --single-version-externally-managed

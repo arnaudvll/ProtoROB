@@ -1,0 +1,6 @@
+source;share/dinamyxelAx12/hook/pythonpath.ps1
+source;share/dinamyxelAx12/hook/pythonpath.dsv
+source;share/dinamyxelAx12/hook/pythonpath.sh
+source;share/dinamyxelAx12/hook/ament_prefix_path.ps1
+source;share/dinamyxelAx12/hook/ament_prefix_path.dsv
+source;share/dinamyxelAx12/hook/ament_prefix_path.sh
