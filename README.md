@@ -1,42 +1,43 @@
-# Projet de Porte à Reconnaissance Faciale
+# Facial Recognition Door Project
 
-## Description du Projet
+## Project Description
 
-Nous formons une équipe composée de trois étudiants de CPE Lyon : Adrien Pouxviel, Arnaud Ville, et Clément Poirié. Notre objectif consiste à concrétiser le prototype d'une solution conformément à une liste de matériaux et de consignes prédéfinies.
+We are a team of three students from CPE Lyon: Adrien Pouxviel, Arnaud Ville, and Clément Poirié. Our goal is to realize the prototype of a solution according to a predefined list of materials and instructions.
 
-La liste des éléments à utiliser se présente comme suit :
+The list of elements to be used is as follows:
 
-- Mise en œuvre d'une ESP32
-- Intégration d'un capteur de distance
-- Utilisation d'un moteur dynamixel
-- Programmation avec le middleware ROS2
-- Développement d'une application mobile
+- Implementation of an ESP32
+- Integration of a distance sensor
+- Use of a dynamixel motor
+- Programming with the ROS2 middleware
+- Development of a mobile application
 
-La durée allouée pour la réalisation de ce projet s'est étendue sur une période de 20 heures. Notre démarche consiste à élaborer une porte munie d'un système de reconnaissance faciale, permettant ainsi l'accès exclusif aux individus autorisés. La reconnaissance faciale constitue le mécanisme d'authentification nécessaire au déverrouillage de la porte. En outre, nous avons incorporé des fonctionnalités telles que le mode d'ouverture par détection de présence et le mode d'ouverture par commande via téléphone.
+The allocated time for the completion of this project spanned over a period of 20 hours. Our approach is to create a door equipped with a facial recognition system, thus allowing exclusive access to authorized individuals. Facial recognition serves as the authentication mechanism necessary for unlocking the door. Additionally, we have incorporated features such as the presence detection opening mode and the opening mode via phone command.
 
-## Fonctionnalités
+## Features
 
-- **Reconnaissance Faciale :** Mise en œuvre d'un algorithme de reconnaissance faciale visant à identifier de manière précise les individus autorisés.
-- **Capteur de Distance :** Intégration d'un capteur permettant de déterminer la présence ou l'absence d'une personne devant la porte.
-- **Application Mobile IHR :** Conception d'une application mobile agissant en tant qu'interface homme-machine. Elle offre la possibilité d'ouvrir et de fermer la porte à distance, de visualiser en streaming le flux de la caméra, et de modifier le mode d'ouverture entre la reconnaissance faciale et la détection de présence.
+- **Facial Recognition:** Implementation of a facial recognition algorithm aimed at accurately identifying authorized individuals.
+- **Distance Sensor:** Integration of a sensor to determine the presence or absence of a person in front of the door.
+- **IHR Mobile Application:** Design of a mobile application acting as a human-machine interface. It allows remote opening and closing of the door, streaming camera feed visualization, and modification of the opening mode between facial recognition and presence detection.
 
+## Technologies Used
 
-## Technologies Utilisées
+- **Programming Languages:** Python and Arduino
+- **Middleware:** ROS2 Humble
+- **Libraries:**
+    - OpenCV for image capture and image processing.
+    - face_recognition for facial detection and recognition.
 
-- **Langage de Programmation :** Python et arduino
-- **Middleware :**  ROS2 humble
-- **Bibliothèques :**
-    - OpenCV pour la capture d'images et le traitement d'images.
-    - face_recognition pour la détection et la reconnaissance faciale.
+- **Hardware:**
+    - A camera
+    - A PVC plate specifically resized for the door creation.
+    - Custom hinges designed and printed by us using a 3D printer.
+    - A VL53L0X-V2 distance sensor.
+    - An Ax12 dynamixel motor.
+    - Lego bricks
 
-- **Matériel :**
-    - Une caméra
-    - Une plaque de PVC redimensionnée spécifiquement pour la création de la porte.
-    - Des charnières élaborées et imprimées par nos soins à l'aide d'une imprimante 3D.
-    - Un capteur de distance VL53L0X-V2.
-    - Un moteur dynamixel Ax12.
-    - Des legos 
 
 ## Le système
+![both barbie](Reconnaissance_faciale/data/system_schematic.png)
 
 ## Résultats
