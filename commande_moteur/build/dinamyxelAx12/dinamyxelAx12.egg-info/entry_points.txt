@@ -1,3 +1,0 @@
-[console_scripts]
-cmd_bluetooth = dinamyxelAx12.cmd_bluetooth:main
-cmd_manuelle = dinamyxelAx12.cmd_manuelle:main

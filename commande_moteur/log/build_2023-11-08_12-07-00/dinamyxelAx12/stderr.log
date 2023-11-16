@@ -1,7 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
-  warnings.warn(
-  File "/home/adrien/py_proto_ros2/install/dinamyxelAx12/lib/python3.10/site-packages/dinamyxelAx12/dinamyxelAx12.py", line 14
-    motor_id = 2s
-               ^
-SyntaxError: invalid decimal literal
-
