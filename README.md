@@ -37,7 +37,7 @@ The allocated time for the completion of this project spanned over a period of 2
     - Lego bricks
 
 
-## Le système
+## The system
 ![both barbie](Reconnaissance_faciale/data/system_schematic.png)
 
-## Résultats
+## Results
