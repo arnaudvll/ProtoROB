@@ -39,6 +39,7 @@ def init_known_faces():
     # Initialize lists to store face encodings and corresponding names
     known_faces = []
     known_names = []
+    
 
     # Iterate through subdirectories in the KNOWN_FACES_DIR directory
     for name in os.listdir(KNOWN_FACES_DIR):
@@ -82,7 +83,12 @@ def init_known_faces():
 def face_reco_process(video, face_locations, face_encodings, known_faces, known_names):
     # Capture a frame from the video
     ret, frame = video.read()
+    state = False
+    
 
+    # Faire une rotation de 90 degrés dans le sens antihoraire
+    frame = cv2.rotate(frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
+    
     process_this_frame = True
 
     if process_this_frame:
@@ -126,8 +132,14 @@ def face_reco_process(video, face_locations, face_encodings, known_faces, known_
         else:
             cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)  # Green box for recognized faces
             cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
+            state = True
 
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)  # Display the face's name
 
-    return(frame)
+    return(frame, state)
+
+def change_state(state):
+    state = True
+    return(state)
+

@@ -25,7 +25,6 @@ References:
 - https://blog.miguelgrinberg.com/post/video-streaming-with-flask
 '''
 
-
 from flask import Flask, render_template, Response
 from init_camera.camera import Camera
 import cv2

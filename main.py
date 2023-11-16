@@ -13,9 +13,12 @@ video_capture = cv2.VideoCapture(0)
 
 while True:
 
-    image = face_reco_process(video_capture, face_locations, face_encodings, known_faces, known_names)
+    image , state = face_reco_process(video_capture, face_locations, face_encodings, known_faces, known_names)
     # Display the resulting image with detected faces
     cv2.imshow('Video', image)
+
+    if state == True:
+        print("visage connu")
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):

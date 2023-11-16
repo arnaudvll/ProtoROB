@@ -29,7 +29,7 @@ from Reconaissance_faciale.face_reconnaissance import init_known_faces, face_rec
 class Camera(object):
     def __init__(self):
         # Initialize the camera object
-        self.video = cv2.VideoCapture(0)  # Capture video from the default camera (the webcam)
+        self.video = cv2.VideoCapture(2)  # Capture video from the default camera (the webcam)
         self.known_faces, self.known_names = init_known_faces()  # Load known faces and names for recognition 
         self.face_locations = []  # Initialize a list for storing face locations
         self.face_encodings = []  # Initialize an list for storing face encodings
@@ -42,7 +42,8 @@ class Camera(object):
         # Method to capture and process a video frame for facial recognition
 
         # Call the face recognition process function with the current video frame
-        image = face_reco_process(self.video, self.face_locations, self.face_encodings, self.known_faces, self.known_names)
+        image  = face_reco_process(self.video, self.face_locations, self.face_encodings, self.known_faces, self.known_names)
+
 
         # Encode the processed image to JPEG format
         ret, jpeg = cv2.imencode('.jpg', image)
