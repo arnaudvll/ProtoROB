@@ -28,14 +28,6 @@ class MotorController(Node):
         self.ADDR_MOVING_SPEED = 32
         self.ADDR_TORQUE_ENABLE = 24
 
-        # Souscription au topic de controle du mode de pilotage
-        self.controlModeSubscription = self.create_subscription(
-            String,
-            'control_mode',
-            self.controlModeChanged,
-            10)
-        self.controlModeSubscription
-
         # Souscription au topic de controle manuel
         self.manualControlSubscription = self.create_subscription(
             String,
@@ -45,20 +37,14 @@ class MotorController(Node):
         self.manualControlSubscription 
 
 
-    def controlModeChanged(self, control_mode):
-        match control_mode.data:
-            case 'sensor_mode':
-                self.openDoor()
-                self.closeDoor()
-            case 'camera_mode':
-                a = 1
-
     def manualControlReceived(self, manual_control):
-        print("DATA RECUE :", manual_control)
         match manual_control.data:
             case 'open':
                 self.openDoor()
             case 'close':
+                self.closeDoor()
+            case 'openAndClose':
+                self.openDoor()
                 self.closeDoor()
 
     def stop_motor(self):

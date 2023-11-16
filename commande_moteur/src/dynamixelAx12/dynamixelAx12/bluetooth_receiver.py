@@ -29,8 +29,8 @@ class BluetoothReceiver(Node):
                 if self.sensor_mode == True and self.door_moving == False: 
                     if (int(data) < 200):
                         self.door_moving = True
-                        self.publisher_ = self.create_publisher(String, 'control_mode', 10)
-                        self.publisher_.publish(String(data='sensor_mode'))
+                        self.publisher_ = self.create_publisher(String, 'manual_control', 10)
+                        self.publisher_.publish(String(data='openAndClose'))
                         self.door_moving = False
                         self.sensor_mode = False
                     
@@ -39,7 +39,8 @@ class BluetoothReceiver(Node):
                     case "sensor":
                         self.sensor_mode = True
                     case 'camera':
-                        self.cameramode = True
+                        self.publisher_ = self.create_publisher(String, 'control_mode', 10)
+                        self.publisher_.publish(String(data='camera'))
                     case "open" : 
                         self.publisher_ = self.create_publisher(String, 'manual_control', 10)
                         self.publisher_.publish(String(data='open'))
