@@ -9,7 +9,7 @@ class BluetoothReceiver(Node):
     def __init__(self):
         super().__init__('bluetooth_receiver')
 
-        self.port_name_ser = '/dev/ttyUSB0'
+        self.port_name_ser = '/dev/ttyUSB1'
         self.baud_rate_ser = 115200
         self.ser = serial.Serial(self.port_name_ser, self.baud_rate_ser, timeout=1)
 

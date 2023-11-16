@@ -13,10 +13,6 @@ class MotorController(Node):
         self.port_name = '/dev/ttyACM0'  # Adjust the port name as needed
         self.baud_rate = 1000000
 
-        self.port_name_ser = '/dev/ttyUSB0'
-        self.baud_rate_ser = 115200
-        self.ser = serial.Serial(self.port_name_ser, self.baud_rate_ser, timeout=1)
-
         # Set the Dynamixel motor ID
         self.motor_id = 2
 
@@ -60,7 +56,7 @@ class MotorController(Node):
         # Rotate CW with power level 50%
         dxl_comm_result, dxl_error = self.packet_handler.write2ByteTxRx(self.port_handler, self.motor_id, self.ADDR_MOVING_SPEED, 2046)
         # Bon timer est 23 secondes
-        time.sleep(3)
+        time.sleep(23)
         # Stop the motor
         dxl_comm_result, dxl_error = self.packet_handler.write2ByteTxRx(self.port_handler, self.motor_id, self.ADDR_MOVING_SPEED, 1024)
         # Wait before changing direction
@@ -74,7 +70,7 @@ class MotorController(Node):
         # Rotate CCW with power level 50%
         dxl_comm_result, dxl_error = self.packet_handler.write2ByteTxRx(self.port_handler, self.motor_id, self.ADDR_MOVING_SPEED, 1023)
         # Bon timer est 23 secondes
-        time.sleep(3)
+        time.sleep(23)
         # Stop the motor
         dxl_comm_result, dxl_error = self.packet_handler.write2ByteTxRx(self.port_handler, self.motor_id, self.ADDR_MOVING_SPEED, 1024)
         time.sleep(1)

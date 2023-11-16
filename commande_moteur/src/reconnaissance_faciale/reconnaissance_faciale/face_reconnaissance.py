@@ -86,6 +86,7 @@ class FaceReconnaissance():
         state = False
 
         process_this_frame = True
+        frame = cv2.rotate(frame, cv2.ROTATE_90_COUNTERCLOCKWISE)
 
         if process_this_frame:
             # Resize the frame for faster processing

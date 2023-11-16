@@ -25,7 +25,7 @@ class FaceDetection(Node):
             face_locations = []
             face_encodings = []
 
-            video_capture = cv2.VideoCapture(0)
+            video_capture = cv2.VideoCapture(2) #0 for RaspPi, 2 for laptop
 
 
             while True:
