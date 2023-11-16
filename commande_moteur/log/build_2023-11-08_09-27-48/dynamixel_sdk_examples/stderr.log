@@ -1,0 +1,16 @@
+[01m[K/home/adrien/proto_ws_ros2/src/DynamixelSDK/dynamixel_sdk_examples/src/read_write_node.cpp:[m[K In lambda function:
+[01m[K/home/adrien/proto_ws_ros2/src/DynamixelSDK/dynamixel_sdk_examples/src/read_write_node.cpp:118:9:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kuint32_t*[m[K’ {aka ‘[01m[Kunsigned int*[m[K’} to ‘[01m[Kuint16_t*[m[K’ {aka ‘[01m[Kshort unsigned int*[m[K’}
+  118 |         [01;31m[Kreinterpret_cast<uint32_t *>(&present_position)[m[K,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [01;31m[K|[m[K
+      |         [01;31m[Kuint32_t* {aka unsigned int*}[m[K
+In file included from [01m[K/home/adrien/proto_ws_ros2/install/dynamixel_sdk/include/dynamixel_sdk/group_bulk_read.h:29[m[K,
+                 from [01m[K/home/adrien/proto_ws_ros2/install/dynamixel_sdk/include/dynamixel_sdk/dynamixel_sdk.h:26[m[K,
+                 from [01m[K/home/adrien/proto_ws_ros2/src/DynamixelSDK/dynamixel_sdk_examples/src/read_write_node.cpp:34[m[K:
+[01m[K/home/adrien/proto_ws_ros2/install/dynamixel_sdk/include/dynamixel_sdk/packet_handler.h:372:91:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvirtual int dynamixel::PacketHandler::read2ByteTxRx(dynamixel::PortHandler*, uint8_t, uint16_t, uint16_t*, uint8_t*)[m[K’
+  372 | ad2ByteTxRx   (PortHandler *port, uint8_t id, uint16_t address, [01;36m[Kuint16_t *data[m[K, uint8_t *error = 0) = 0;
+      |                                                                 [01;36m[K~~~~~~~~~~^~~~[m[K
+
+gmake[2]: *** [CMakeFiles/read_write_node.dir/build.make:76 : CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o] Erreur 1
+gmake[1]: *** [CMakeFiles/Makefile2:137 : CMakeFiles/read_write_node.dir/all] Erreur 2
+gmake: *** [Makefile:146 : all] Erreur 2

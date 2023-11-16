@@ -1,0 +1,22 @@
+[0.030s] Invoking command in '/home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/adrien/proto_ws_ros2/install/dynamixel_sdk_custom_interfaces:/home/adrien/proto_ws_ros2/install/dynamixel_sdk:/home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples:/opt/ros/humble /usr/bin/cmake --build /home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples -- -j16 -l16
+[0.124s] [100%] Built target read_write_node
+[0.140s] Invoked command in '/home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/adrien/proto_ws_ros2/install/dynamixel_sdk_custom_interfaces:/home/adrien/proto_ws_ros2/install/dynamixel_sdk:/home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples:/opt/ros/humble /usr/bin/cmake --build /home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples -- -j16 -l16
+[0.208s] Invoking command in '/home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples': CMAKE_PREFIX_PATH=/home/adrien/proto_ws_ros2/install/dynamixel_sdk_custom_interfaces:/home/adrien/proto_ws_ros2/install/dynamixel_sdk:/home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples:/opt/ros/humble /usr/bin/cmake --install /home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples
+[0.226s] -- Install configuration: ""
+[0.226s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/lib/dynamixel_sdk_examples/read_write_node
+[0.227s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_examples
+[0.227s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_examples
+[0.227s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.sh
+[0.227s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/ament_prefix_path.dsv
+[0.228s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.sh
+[0.228s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/environment/path.dsv
+[0.228s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.bash
+[0.228s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.sh
+[0.228s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.zsh
+[0.228s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/local_setup.dsv
+[0.228s] -- Installing: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.dsv
+[0.229s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/ament_index/resource_index/packages/dynamixel_sdk_examples
+[0.229s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig.cmake
+[0.229s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/cmake/dynamixel_sdk_examplesConfig-version.cmake
+[0.229s] -- Up-to-date: /home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples/share/dynamixel_sdk_examples/package.xml
+[0.238s] Invoked command in '/home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples' returned '0': CMAKE_PREFIX_PATH=/home/adrien/proto_ws_ros2/install/dynamixel_sdk_custom_interfaces:/home/adrien/proto_ws_ros2/install/dynamixel_sdk:/home/adrien/proto_ws_ros2/install/dynamixel_sdk_examples:/opt/ros/humble /usr/bin/cmake --install /home/adrien/proto_ws_ros2/build/dynamixel_sdk_examples
