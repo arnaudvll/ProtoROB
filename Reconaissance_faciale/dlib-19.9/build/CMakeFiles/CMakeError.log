@@ -1,0 +1,38 @@
+Determining if the function sgesv exists failed with the following output:
+Change Dir: /home/clement/Documents/CPE_Lyon/proto/ProtoROB/Reconaissance_faciale/dlib-19.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_89c79/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_89c79.dir/build.make CMakeFiles/cmTC_89c79.dir/build
+gmake[1] : on entre dans le répertoire « /home/clement/Documents/CPE_Lyon/proto/ProtoROB/Reconaissance_faciale/dlib-19.9/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_89c79.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgesv -o CMakeFiles/cmTC_89c79.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_89c79
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89c79.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgesv -rdynamic CMakeFiles/cmTC_89c79.dir/CheckFunctionExists.c.o -o cmTC_89c79 
+/usr/bin/ld : CMakeFiles/cmTC_89c79.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text+0x14) : référence indéfinie vers « sgesv »
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_89c79.dir/build.make:99 : cmTC_89c79] Erreur 1
+gmake[1] : on quitte le répertoire « /home/clement/Documents/CPE_Lyon/proto/ProtoROB/Reconaissance_faciale/dlib-19.9/build/CMakeFiles/CMakeTmp »
+gmake: *** [Makefile:127 : cmTC_89c79/fast] Erreur 2
+
+
+
+Determining if the function sgesv_ exists failed with the following output:
+Change Dir: /home/clement/Documents/CPE_Lyon/proto/ProtoROB/Reconaissance_faciale/dlib-19.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ee76c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ee76c.dir/build.make CMakeFiles/cmTC_ee76c.dir/build
+gmake[1] : on entre dans le répertoire « /home/clement/Documents/CPE_Lyon/proto/ProtoROB/Reconaissance_faciale/dlib-19.9/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_ee76c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgesv_ -o CMakeFiles/cmTC_ee76c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ee76c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee76c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgesv_ -rdynamic CMakeFiles/cmTC_ee76c.dir/CheckFunctionExists.c.o -o cmTC_ee76c 
+/usr/bin/ld : CMakeFiles/cmTC_ee76c.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text+0x14) : référence indéfinie vers « sgesv_ »
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_ee76c.dir/build.make:99 : cmTC_ee76c] Erreur 1
+gmake[1] : on quitte le répertoire « /home/clement/Documents/CPE_Lyon/proto/ProtoROB/Reconaissance_faciale/dlib-19.9/build/CMakeFiles/CMakeTmp »
+gmake: *** [Makefile:127 : cmTC_ee76c/fast] Erreur 2
+
+
+
