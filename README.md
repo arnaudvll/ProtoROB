@@ -46,7 +46,7 @@ The core of our system is the Raspberry Pi, which controls the motors based on t
 
 ## Results
 
-You can see how our automatic door works in the video here: [video link](https://www.youtube.com/watch?v=eF3JlMnl-vE)
+You can see how our automatic door works in the video here: [video link](https://www.youtube.com/watch?v=RlrkkecXALc)
 
 Here is a photo of the final version of the project:
 
