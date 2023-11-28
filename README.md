@@ -44,6 +44,20 @@ This project enables us to explore all aspects of a robotic system: the hardware
 
 The core of our system is the Raspberry Pi, which controls the motors based on the mode sent by the ESP32 and handles facial recognition. The streaming flow is displayed on an HTML page, which is sent in real-time to a Flask server (locally). The phone, serving as the IHR (In-Home Receiver), connects to this server, providing a live camera feed on the phone. Additionally, the user can control the opening and closing of the system through the application, as well as choose the mode (facial recognition, presence detection, manual). All this information is transmitted via Bluetooth to the ESP32. The ESP32 manages the distance sensor and sends all the information to the RaspberryPI
 
+## How to launch
+
+To install and launch the project, follow these steps:
+ - install the mobile application *(/AppMobile/ProtoROB.apk)* on an Android device
+ - go into */commande_moteur*, then build and install the ros package:
+```bash
+colcon build
+source install/setup.bash
+```
+ - launch the project:
+```bash
+ros2 launch dynamixelAx12 launch.py
+```
+ - connect to the ESP32 in bluetooth thanks to the application on your Android device
 ## Results
 
 You can see how our automatic door works in the video here: [video link](https://www.youtube.com/watch?v=RlrkkecXALc)
